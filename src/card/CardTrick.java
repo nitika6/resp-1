@@ -14,9 +14,9 @@ public class CardTrick {
     
     public static void main(String[] args)
     {
-        Card[] magicHand = new Card[7];
+        Card[] magicHand = new Card[7]; // Fix the array size
         
-        for (int i=0; i<magicHand.length; i++)
+        for (int i = 0; i < magicHand.length; i++)
         {
             Card c = new Card();
             //c.setValue(insert call to random number generator here)
@@ -29,10 +29,10 @@ public class CardTrick {
         // add one luckcard hard code 2,clubs
         // ... (existing code)
 
-// Hardcoded lucky card
+        // Hardcoded lucky card
         Card luckyCard = new Card();
-        luckyCard.setValue(7);  // Set your desired card value
-        luckyCard.setSuit("Spades");  // Set your desired card suit
+        luckyCard.setValue(2);  // Set your desired card value
+        luckyCard.setSuit("Clubs");  // Set your desired card suit
 
         // Search for the lucky card in the randomly generated array
         boolean found = false;
@@ -49,7 +49,5 @@ public class CardTrick {
         } else {
             System.out.println("Sorry, the lucky card is not in the magic hand.");
         }
-
     }
-    
 }

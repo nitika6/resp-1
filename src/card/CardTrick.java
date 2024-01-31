@@ -27,6 +27,12 @@ public class CardTrick {
         // and search magicHand here
         //Then report the result here
         // add one luckcard hard code 2,clubs
+        // Hardcoded lucky card
+     Card luckyCard = new Card();
+     luckyCard.setValue(5);  // Set your desired card value
+     luckyCard.setSuit("Spades");  // Set your desired card suit
+     magicHand[6] = luckyCard;  // Hardcoded at the last index
+
     }
     
 }

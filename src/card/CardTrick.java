@@ -27,6 +27,29 @@ public class CardTrick {
         // and search magicHand here
         //Then report the result here
         // add one luckcard hard code 2,clubs
+        // ... (existing code)
+
+// Hardcoded lucky card
+        Card luckyCard = new Card();
+        luckyCard.setValue(7);  // Set your desired card value
+        luckyCard.setSuit("Spades");  // Set your desired card suit
+
+        // Search for the lucky card in the randomly generated array
+        boolean found = false;
+        for (Card card : magicHand) {
+            if (card.getValue() == luckyCard.getValue() && card.getSuit().equalsIgnoreCase(luckyCard.getSuit())) {
+                found = true;
+                break;
+            }
+        }
+
+        // Report the result to the user
+        if (found) {
+            System.out.println("Congratulations! You found the lucky card.");
+        } else {
+            System.out.println("Sorry, the lucky card is not in the magic hand.");
+        }
+
     }
     
 }

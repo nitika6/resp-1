@@ -1,5 +1,5 @@
 package ca.sheridancollege.project;
-
+// Author name:Nitika Nitika
 public class Card {
     private String suit;
     private String value;
